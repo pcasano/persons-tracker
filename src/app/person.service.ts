@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Person } from "./app.person";
 
-@Injectable()
 export class PersonService {
     persons: Person[] = [];
 
@@ -12,6 +11,10 @@ export class PersonService {
 
     addPerson(person: Person) {
         this.persons.push(person);
+    }
+
+    deletePersonByIndex(index:any) {
+        this.persons.splice(index, 1);
     }
 
 }

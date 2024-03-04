@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormularComponent } from './formular/formular.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
+import { PersonService } from './person.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TableComponent } from './table/table.component';
     ReactiveFormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    PersonService
   ],
   bootstrap: [AppComponent]
 })

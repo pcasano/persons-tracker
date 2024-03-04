@@ -6,19 +6,19 @@ import { Person } from '../app.person';
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrl: './table.component.css',
-  providers: [PersonService]
 })
 export class TableComponent {
 
-  constructor(private personService: PersonService) {
+  constructor(public personService: PersonService) {
 
   }
 
-  persons: Person[] = [];
 
+  onDelete(i:any) {
+    this.personService.deletePersonByIndex(i);
 
-  ngOnInit() {
-    this.persons = this.personService.getPersons();
-    console.log("-" + this.personService.getPersons());
   }
+
+
+
 }

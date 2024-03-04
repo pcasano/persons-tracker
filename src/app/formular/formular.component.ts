@@ -7,7 +7,6 @@ import { PersonService } from '../person.service';
   selector: 'app-formular',
   templateUrl: './formular.component.html',
   styleUrl: './formular.component.css',
-  providers: [PersonService]
 })
 export class FormularComponent {
 
@@ -30,18 +29,8 @@ export class FormularComponent {
   }
 
 
-
 onFormSubmit(): void {
   const obj = this.userForm.value;
-
-/*   this.persons.push(new Person(
-    obj.firstName,
-    obj.lastName,
-    obj.email,
-    obj.country,
-    obj.firstName,
-  )) */
-
   this.personService.addPerson(new Person(
     obj.firstName,
     obj.lastName,
@@ -49,14 +38,7 @@ onFormSubmit(): void {
     obj.country,
     obj.firstName,
   ));
-
-
-  let persons = this.personService.getPersons();
-
-  this.newItemEvent.emit(persons);
-
-  console.log(persons);
-
+  this.userForm.reset();
 } 
 
 }
