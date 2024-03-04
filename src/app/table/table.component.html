@@ -2,9 +2,8 @@
 <br>
 <br>
 
-
-<div class="col-12 mx-5">
-    <table class="table table-bordered mx-5">
+<div class="container col-12">
+    <table class="table table-bordered">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -20,7 +19,7 @@
         <td>{{person.firstName}}</td>
         <td>{{person.lastName}}</td>
         <td>{{person.email}}</td>
-        <td class="mx-5">
+        <td>
           <button type="button" class="btn btn-outline-primary btn-sm">Details</button>
           <button type="button" class="btn btn-outline-danger btn-sm" (click)="onDelete(i)">Delete</button>
           <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
