@@ -37,8 +37,8 @@ onFormSubmit(): void {
     obj.email,
     obj.country,
     obj.firstName,
-    "a",
-    "s"
+    this.getDate(),
+    "-"
   ));
 
     console.log(this.getDate());

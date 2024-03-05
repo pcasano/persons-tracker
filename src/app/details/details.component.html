@@ -29,7 +29,18 @@
         <td>Age</td>
         <td>{{personService.currentPerson.age}}</td>
       </tr>
+      <tr>
+        <td>Creation Date</td>
+        <td>{{personService.currentPerson.creationDate}}</td>
+      </tr>
+      <tr>
+        <td>Edition Date</td>
+        <td>{{personService.currentPerson.editionDate}}</td>
+      </tr>
     </tbody>
     </table>
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="goBack()">Go Back</button>
 
 </div>
