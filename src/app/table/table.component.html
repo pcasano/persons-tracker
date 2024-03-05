@@ -1,7 +1,5 @@
-
 <br>
 <br>
-
 <div class="container col-12">
     <table class="table table-bordered">
     <thead>
@@ -20,7 +18,7 @@
         <td>{{person.lastName}}</td>
         <td>{{person.email}}</td>
         <td>
-          <button type="button" class="btn btn-outline-primary btn-sm">Details</button>
+          <button type="button" class="btn btn-outline-primary btn-sm"(click)="onDetails(i)">Details</button>
           <button type="button" class="btn btn-outline-danger btn-sm" (click)="onDelete(i)">Delete</button>
           <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
           

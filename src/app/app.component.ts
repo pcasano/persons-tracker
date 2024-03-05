@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DisplayService } from './display.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  constructor(public displayService: DisplayService) {
+
+  }
+
   title = 'persons-tracker';
 }

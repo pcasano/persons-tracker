@@ -37,8 +37,17 @@ onFormSubmit(): void {
     obj.email,
     obj.country,
     obj.firstName,
+    "a",
+    "s"
   ));
+
+    console.log(this.getDate());
+
   this.userForm.reset();
 } 
+
+getDate():string {
+  return new Date().toDateString();
+}
 
 }

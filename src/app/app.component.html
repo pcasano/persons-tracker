@@ -1,12 +1,10 @@
-
 <div style="background-color:LightGray;">
   <br>
     <h1 class="text-center">Person tracker</h1>
     <br>
   </div>
   
-  <app-formular></app-formular>
-  
-  <app-table></app-table>
+  <app-formular *ngIf="displayService.isFormularDisplayed()"></app-formular>
+  <app-table *ngIf="displayService.isTabelDisplayed()"></app-table>
 
-
+  <router-outlet></router-outlet>

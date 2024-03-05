@@ -1,8 +1,9 @@
-import { Injectable } from "@angular/core";
+
 import { Person } from "./app.person";
 
 export class PersonService {
     persons: Person[] = [];
+    currentPerson: Person;
 
 
     getPersons(): Person[]{
@@ -15,6 +16,10 @@ export class PersonService {
 
     deletePersonByIndex(index:any) {
         this.persons.splice(index, 1);
+    }
+
+    setCurrentPerson(i:any) {
+        this.currentPerson =  this.persons[i];
     }
 
 }
