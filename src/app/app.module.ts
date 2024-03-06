@@ -7,14 +7,15 @@ import { FormularComponent } from './formular/formular.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
 import { PersonService } from './person.service';
-import { DisplayService } from './display.service';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularComponent,
-    TableComponent
+    TableComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,6 @@ import { RouterModule } from '@angular/router';
   providers: [
     provideClientHydration(),
     PersonService,
-    DisplayService
   ],
   bootstrap: [AppComponent]
 })
