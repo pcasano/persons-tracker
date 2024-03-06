@@ -6,8 +6,8 @@ import { FormularComponent } from './formular/formular.component';
 
 const routes: Routes = [
   { path: 'details', component: DetailsComponent },
-  { path: '', component: AppComponent }
-  // Add other routes if needed
+  //{ path: '', component: AppComponent }
+
 ];
 
 @NgModule({
