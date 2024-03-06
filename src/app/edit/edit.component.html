@@ -1,0 +1,29 @@
+<br>
+<br>
+<div class="container">
+
+    <form [formGroup]="userForm" (ngSubmit)="onSave()">
+        <div class="row mx-5">
+            <div class="mb-3 col">
+                <label for="" class="form-label">First name</label>
+                <input type="text" class="form-control" formControlName="firstName" placeholder="First Name" required>
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label">Last name</label>
+                <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label">Email</label>
+                <input type="text" class="form-control" formControlName="email" placeholder="Email">
+              </div>
+        </div>    
+
+        <div class="row">
+            <button type="submit" class="btn btn-primary col mx-5">Save</button>
+            <button type="button"  class="btn btn-primary col mx-5" (click)="onGoBack()">Go Back</button>
+            <br>
+            <br> 
+        </div>
+    </form>
+
+</div>

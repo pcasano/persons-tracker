@@ -9,13 +9,15 @@ import { TableComponent } from './table/table.component';
 import { PersonService } from './person.service';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularComponent,
     TableComponent,
-    HomeComponent
+    HomeComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

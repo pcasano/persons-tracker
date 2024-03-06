@@ -41,8 +41,6 @@ onFormSubmit(): void {
     "-"
   ));
 
-    console.log(this.getDate());
-
   this.userForm.reset();
 } 
 

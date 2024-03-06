@@ -4,6 +4,7 @@ import { Person } from "./app.person";
 export class PersonService {
     persons: Person[] = [];
     currentPerson: Person;
+    index:number;
 
 
     getPersons(): Person[]{
@@ -20,6 +21,10 @@ export class PersonService {
 
     setCurrentPerson(i:any) {
         this.currentPerson =  this.persons[i];
+    }
+
+    setPersonIndex(i:any) {
+        this.index = i;
     }
 
 }

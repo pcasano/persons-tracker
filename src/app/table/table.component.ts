@@ -25,6 +25,11 @@ export class TableComponent {
     this.router.navigateByUrl("/details");
   }
 
+  onEdit(i:any) {
+    this.personService.setPersonIndex(i); 
+    this.router.navigateByUrl("/edit");
+  }
+
 
 
 }
