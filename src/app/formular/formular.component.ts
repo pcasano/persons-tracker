@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Person } from '../app.person';
 import { PersonService } from '../person.service';
 
@@ -17,8 +17,8 @@ export class FormularComponent {
   persons: Person[] = [];
   
   userForm: FormGroup = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required]),
     email: new FormControl(''),
     country: new FormControl(''),
     age: new FormControl('')
